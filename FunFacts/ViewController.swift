@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import GameKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var funFactLabel: UILabel!
+    
+    
+    
+    @IBOutlet weak var FunFactButton: UIButton!
+    
+    
+    
+    let factModel = FactModel()
+    let colorModel = ColorModel()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        funFactLabel.text = factModel.getRandomFact()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +34,35 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showFunFact() {
+        let randomColor = ColorModel().getRandomColor()
+        view.backgroundColor = randomColor
+        FunFactButton.tintColor = randomColor
+        funFactLabel.text = factModel.getRandomFact()
+        
+        
+    }
 
 }
+
+struct Tag {
+    let name: String
+}
+
+struct Post {
+    let title: String
+    let author: String
+    let tag: Tag
+    
+    func description() -> String {
+        return "\(title) by \(author). Filed under \(tag)"
+    }
+}
+
+let classic = Tag(name: "classic")
+
+let firstPost = Post(title: "Animal Farm", author: "George Orwell", tag: classic)
+
+let postDescription = firstPost.description()
+
 

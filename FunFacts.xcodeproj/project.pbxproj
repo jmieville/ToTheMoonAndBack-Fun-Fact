@@ -12,6 +12,8 @@
 		8BF5D4DA1CDE6DF500DDAB7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5D4D81CDE6DF500DDAB7C /* Main.storyboard */; };
 		8BF5D4DC1CDE6DF500DDAB7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5D4DB1CDE6DF500DDAB7C /* Assets.xcassets */; };
 		8BF5D4DF1CDE6DF500DDAB7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5D4DD1CDE6DF500DDAB7C /* LaunchScreen.storyboard */; };
+		8BF5D4E71CDF227500DDAB7C /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5D4E61CDF227500DDAB7C /* FactModel.swift */; };
+		8BF5D4E91CDF47CE00DDAB7C /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5D4E81CDF47CE00DDAB7C /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8BF5D4DB1CDE6DF500DDAB7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF5D4DE1CDE6DF500DDAB7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF5D4E01CDE6DF500DDAB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF5D4E61CDF227500DDAB7C /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		8BF5D4E81CDF47CE00DDAB7C /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				8BF5D4D41CDE6DF500DDAB7C /* AppDelegate.swift */,
 				8BF5D4D61CDE6DF500DDAB7C /* ViewController.swift */,
+				8BF5D4E61CDF227500DDAB7C /* FactModel.swift */,
+				8BF5D4E81CDF47CE00DDAB7C /* ColorModel.swift */,
 				8BF5D4D81CDE6DF500DDAB7C /* Main.storyboard */,
 				8BF5D4DB1CDE6DF500DDAB7C /* Assets.xcassets */,
 				8BF5D4DD1CDE6DF500DDAB7C /* LaunchScreen.storyboard */,
@@ -96,6 +102,8 @@
 				TargetAttributes = {
 					8BF5D4D01CDE6DF400DDAB7C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8GL695U4E9;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -135,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF5D4E71CDF227500DDAB7C /* FactModel.swift in Sources */,
 				8BF5D4D71CDE6DF500DDAB7C /* ViewController.swift in Sources */,
 				8BF5D4D51CDE6DF500DDAB7C /* AppDelegate.swift in Sources */,
+				8BF5D4E91CDF47CE00DDAB7C /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +259,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8GL695U4E9;
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +272,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8GL695U4E9;
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +300,7 @@
 				8BF5D4E51CDE6DF500DDAB7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
